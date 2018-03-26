@@ -120,9 +120,9 @@ def gen_random_birthday():
     return birthday
 
 def gen_random_domain():
-    length = random.randint(3, 13)
-    prefix = ''.join([random.choice(string.ascii_lowercase+string.digits) for i in range(random.randint(2, 5))])
-    domain_prefix = random.choice(['', 'www', 'blog', 'bbs', 'club', prefix])
+    length = random.randint(3, 9)
+    prefix = ''.join([random.choice(string.ascii_lowercase+string.digits) for i in range(random.randint(2, 6))])
+    domain_prefix = random.choice(['', 'www', 'blog', 'bbs', 'club', 'my', 'user', 'member', 'admin', prefix])
     domain_prefix = domain_prefix+'.' if domain_prefix else '' 
     domain_main = ''.join([random.choice(string.ascii_lowercase+string.digits) for i in range(length)])
     domain_suffix = random.choice(['com', 'com.cn', 'net', 'org', 'cn'])
